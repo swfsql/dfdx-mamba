@@ -1,6 +1,16 @@
 [package]
 name = "dfdx-mamba"
-version = "0.1.0"
+version = "0.0.1"
 edition = "2021"
 
-[dependencies]
+[features]
+default = ["nightly"]
+nightly = ["dfdx/nightly"]
+safetensors = ["dfdx/safetensors"]
+
+[dependencies.dfdx]
+git = 'https://github.com/swfsql/dfdx.git'
+# branch = this-main
+rev = "c4a2995"
+default-features = false
+features = ["safetensors", "nightly"]
