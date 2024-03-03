@@ -9,8 +9,9 @@ In short and simple terms, Mamba is an alternative, with trade-offs, to the atte
 ```toml
 [dependencies.dfdx-mamba]
 git = 'https://github.com/swfsql/dfdx-mamba.git'
-# rev = "" # instead of using a branch, you can pin to a specific commit
-branch = 'main'
+branch = "main"
+## instead of using a branch, you can pin to a specific commit:
+# rev = ""
 features = ["nightly", "safetensors"]
 ```
 
@@ -19,10 +20,14 @@ Note that this depends on a fork of dfdx that has some draft prs merged into it:
 [dependencies.dfdx]
 git = 'https://github.com/swfsql/dfdx.git'
 rev = "c4a2995"
-# branch = this-main
+# branch = "this-main"
 default-features = false
 features = ["nightly", "safetensors"]
 ```
+
+##### Example
+
+You can check an example using this mamba block for inference in [here](https://github.com/swfsql/mamba-minimal-dfdx-example) (you can also check it in the browser in WebAssembly).
 
 ##### Implementation References
 
