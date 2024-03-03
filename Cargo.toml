@@ -10,7 +10,7 @@ safetensors = ["dfdx/safetensors"]
 
 [dependencies.dfdx]
 git = 'https://github.com/swfsql/dfdx.git'
-# branch = this-main
-rev = "c4a2995"
+branch = "this-main"
+# rev = "c4a2995"
 default-features = false
 features = ["safetensors", "nightly"]
