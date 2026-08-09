@@ -4,13 +4,13 @@ version = "0.0.1"
 edition = "2021"
 
 [features]
-default = ["nightly"]
+default = []
 nightly = ["dfdx/nightly"]
 safetensors = ["dfdx/safetensors"]
 
 [dependencies.dfdx]
 git = 'https://github.com/swfsql/dfdx.git'
-branch = "this-main"
-# rev = "c4a2995"
+# branch = "this-main"
+rev = "1780222ecc139afabd6e1ce32ad17621720775a2"
 default-features = false
-features = ["safetensors", "nightly"]
+features = []
